@@ -6,7 +6,7 @@ import Card from '../components/Card.astro';
 <Layout title="Welcome to Astro.">
 	<main>
 		
-		<h1>Bienvenido a <span class="text-gradient">Apuntado</span></h1>
+		<h1 class="title">Bienvenido a <span class="text-gradient">Apuntado</span></h1>
 		<p class="instructions">
 			Puedes iniciar sesion o crear una cuenta<br />
 			<strong>Recordatorio: </strong> Para apostar debes crear una cuenta
@@ -67,6 +67,15 @@ import Card from '../components/Card.astro';
 		text-align: center;
 		margin-bottom: 1em;
 	}
+
+	.title {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
